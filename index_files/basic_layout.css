@@ -1,0 +1,445 @@
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, p, th, td { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6, p { font-size:100%; }
+ol, ul { list-style:none; }
+cite, code, em, strong { font-style:normal; font-weight:normal; }
+table { border-collapse:collapse; border-spacing:0;}
+fieldset, img { border:0; }
+th { text-align:left; }
+q:before, q:after { content:''; }
+
+body { font:normal .8em 'trebuchet ms',arial,verdana,sans-serif; margin:0; padding:0; line-height:1.75; overflow:visible; background:url(../images/bg.jpg) top left repeat; }   /* 背景图片*/
+
+#bg { position:absolute; top:0; left:0; width:100%; z-index:-1;}
+
+/* heading font styles */
+h1{font-size:2.00em; font-weight:100}
+h2{font-size:1.55em; font-weight:100; line-height:1.25em}
+h3{font-size:1.35em; font-weight:100}
+h4{font-size:1.25em; font-weight:100}
+h5{font-size:1.15em; font-weight:100}
+h6{font-size:1.05em; font-weight:100}
+
+
+p { margin:1em 0; display:block;}
+p+h2, p+h3, p+h4, p+h5, ul+h2, ul+h3, ul+h4, ul+h5, ol+h2, ol+h3, ol+h4, ol+h5 { margin-top:1em; }
+a:link, a:visited { color:#17548b; text-decoration:none; outline:none;}
+a:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+table { margin:1em 0 1em 0; }
+td {font-size:12px;}
+td,th { padding:.25em .5em .25em .5em; border-bottom:1px solid #999999;}
+td:first-child,th:first-child { padding:.25em .5em .25em 0; }
+a.exit  { padding-right:10px; background:url(../images/external_link.png) 100% 60% no-repeat; margin:-5px 5px 0 0; }
+.navigation { margin-top:1.5em; }
+.smalltext, .positiontitle { font-size:smaller; line-height:1em; display:block;}
+.left { float:left; } 
+.right {
+	border: 3px solid #EDEDED ;
+	float: right;
+}
+hr { height:1px; border:none; border-bottom:1px solid #ddd; }
+sup, sub { font-size:.65em; margin-left:.1em;}
+strong { font-weight:700; }
+em { font-style:italic; }
+
+
+/* begin page structure elements */
+#page_header { margin:50px 0 0 0;}
+#container { margin:0 auto; width:900px; position:relative; background:#555 }
+#page_footer {
+	position: relative;
+	padding: 2em 0;
+	margin: 0 0 2em 0;
+	width: 900px;
+	background: #336699;
+	font-size: 0.75em;
+	color: #Fff;
+	line-height: 1.75em;
+	clear: both;
+	float: left;
+	
+}
+/*end page structure elements */
+
+/* Begin Main Navigation */
+#nav_main {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	background-color: #336699;
+	z-index: 20;
+	overflow: visible;
+}
+#nav_main li { display:inline; width:200px; margin:0; padding:0; }
+#nav_main li a, #nav_main li:hover a { color:#fff; text-decoration:none; margin:0; padding:11px 10px 9px 10px; line-height:36px; }
+#nav_main li ul { position:absolute; left:-2000em; width:200px; top:36px;}
+
+/* the #main_entity is always highlighted in the CoE page!*/
+#nav_main li#main_entity a { 
+    /*background-color:#E48300; */
+    padding:12px 20px 12px 15px; margin:0 0 0 0; font-size:1.15em; }
+#nav_main li#main_entity.highlight a {
+	background-color: #990000;
+}
+#nav_main li#main_entity ul li a {font-weight: normal;} /* if you change something above for "#main_entity a", undo it here so its submenu items don't have the same effect. */
+
+#nav_main li#main_entity li ul {display:none;}
+#nav_main li#menu1 li ul {display:none;}
+#nav_main li#menu2 li ul {display:none;}
+#nav_main li#menu3 li ul {display:none;}
+#nav_main li#menu4 li ul {display:none;}
+#nav_main li#menu5 li ul {display:none;}
+#nav_main li#menu6 li ul {display:none;}
+
+#nav_main li#menu1.highlight a,
+#nav_main li#menu1:hover a,
+#nav_main li#menu1:hover ul li:hover a,
+#nav_main li#main_entity:hover a,
+#nav_main li#main_entity:hover ul li:hover a
+{ background:#0A84AC; }
+#nav_main li#menu2.highlight a,
+#nav_main li#menu2:hover a,
+#nav_main li#menu2:hover ul li:hover a
+{ background:#99CC33; }
+#nav_main li#menu3.highlight a,
+#nav_main li#menu3:hover a,
+#nav_main li#menu3:hover ul li:hover a
+
+{ background:#71227C; }
+#nav_main li#menu4.highlight a,
+#nav_main li#menu4:hover a,
+#nav_main li#menu4:hover ul li:hover a
+{ background:#FFCC33; }
+#nav_main li#menu5.highlight a,
+#nav_main li#menu5:hover a,
+#nav_main li#menu5:hover ul li:hover a
+{ background:#990000; }
+#nav_main li#menu6.highlight a,
+#nav_main li#menu6:hover a,
+#nav_main li#menu6:hover ul li:hover a
+{ background:#0D6109; }
+
+#nav_main li.highlight a, #nav_main li.highlight:hover a { padding:15px 10px 12px 10px; }
+
+#nav_main li:hover ul { z-index:200; padding-top:5px; }
+#nav_main li:hover ul li { display:block; position:relative;}
+
+#nav_main li#main_entity:hover li a, #nav_main li#menu1:hover li a, #nav_main li#menu2:hover li a, #nav_main li#menu3:hover li a, #nav_main li#menu4:hover li a, #nav_main li#menu5:hover li a, #nav_main li#menu6:hover li a { font-size:.85em; padding:5px 10px; margin:0; line-height:1.25em; background:none; color:#333; display:block;}
+#nav_main li#main_entity:hover ul { left:0px; border-top:5px solid #336699; background:#e6bfbf; }
+#nav_main li#menu1:hover ul { left:93px; border-top:5px solid #0A84AC; background:#d7deea; }
+#nav_main li#menu2:hover ul { left:180px; border-top:5px solid #99CC33; background:#D6EFD5; }
+#nav_main li#menu3:hover ul { left:232px; border-top:5px solid #71227C; background:#e6bfbf; }
+#nav_main li#menu4:hover ul { left:346px; border-top:5px solid #FFCC33; background:#f3ddbf; }
+#nav_main li#menu5:hover ul { left:445px; border-top:5px solid #990000; background:#F6CACB; }
+#nav_main li#menu6:hover ul { left:520px; border-top:5px solid #0D6109; background:#B8CABC; }
+#nav_main li#main_entity:hover li:hover a, #nav_main li#menu1:hover li:hover a, #nav_main li#menu2:hover li:hover a, #nav_main li#menu3:hover li:hover a, #nav_main li#menu4:hover li:hover a, #nav_main li#menu5:hover li:hover a, #nav_main li#menu6:hover li:hover a  {
+	color: #fff;
+	text-decoration: none;
+}
+/* End main navigation */
+
+/* begin sub-navigation */
+#nav_sub { width:200px; font-size:.95em; float:left; margin:2em 0 0 0; background: #555; line-height:1.25em; position:relative; padding-top:25px}
+#nav_sub li {vertical-align:middle;}
+#nav_sub li a, #nav_sub li.highlight a { padding:.75em 10px; color:#fff; display:block;}
+#nav_sub li li, #nav_sub li li li, #nav_sub li.highlight li li { position:absolute; left:-2000em;}
+#nav_sub li.highlight { border-bottom-width:1px; border-bottom-style:solid; padding:0 0 0 5px;}
+#nav_sub > li.highlight { margin-left:-5px; }
+#nav_sub li.highlight > a { font-weight:bold; }
+#nav_sub li.highlight ul ul { margin-top:0; }
+#nav_sub li.highlight li{ margin:0; position:relative; left:0; background:#555; }
+#nav_sub li li.highlight li { margin:0; position:relative; left:0; background:#777; border-bottom:1px dotted #555; }
+#nav_sub li li.highlight li.highlight { margin:0; background:#999; }
+#nav_sub li li.highlight li.highlight li { margin:0; background:#ddd; }
+#nav_sub li li.highlight li.highlight li a { margin:0; color:#000; }
+#nav_sub li:hover, #nav_sub li.highlight li:hover, #nav_sub li li.highlight li:hover { background:#444; }
+#nav_sub li li.highlight, #nav_sub li li.highlight:hover { background:#333; }
+/* end sub-navigation */
+
+/* content styles */
+#content { margin:0 0 0 200px; padding:25px 15px 1px 15px; border-left:1px solid #CCC; background:#FFF; }
+
+#content img.left { float:left; margin-right:1.25em; }
+#content img.center { float:left; margin:1em auto; position:relative; }
+#content .figure img { display:block; margin:0 auto; float:none;}  
+#content .figure { float:right; position:relative; margin:1em; clear:right; border:1px solid #eee; padding:.5em; display:block; max-width:250px; }
+#content p img + img { clear:right; display:block;}
+#content div.publication { font-style:italic; display:inline; }
+#content img.file { width:12px; height:12px; float:none; clear:none; display:inline; margin-left:3px;}
+#content ol li, #content ul li { margin:0 0 0 2em; }
+#content ol li { list-style:outside decimal; }
+#content ul li {list-style:outside disc; }
+#content dt {margin:1.75em 0 0 0; font-weight:bold; }
+
+
+
+
+
+/* end content styles */
+
+/* ss Navigation Bar */
+#ssnavbar { position:absolute; top:0; width:100%; }
+/* End ss navigation Bar */
+
+/* begin headline slide show */
+#slideshow { margin:0; position:relative; height:300px; width:900px; background:#222; overflow:hidden;}
+ul#pikame{
+	position:absolute;
+	top:238px;
+	left:575px;
+	background:url(../index_files/transpBlack.png) repeat;
+	overflow:none;
+	padding:10px 5px 10px 5px; border-left:1px solid #444;
+}
+.pika_main{
+	width:900px;
+	height:300px;
+	margin:0 auto;
+}
+#pikame li{
+	margin:0 5px;
+	background:#222;
+	position:relative;
+	width:50px;
+	height:44px;
+	float:left;
+    overflow:hidden;}
+
+/* thats all you NEED to edit. But continue if you'd like. */
+ul#pikame li img{position:relative;cursor:pointer;z-index:1;}
+.pika_main img{postion:absolute; top:50px;}
+.pika_main{position: relative;margin:0 auto;}
+.pikachoose li{float:left;position:relative;overflow:hidden;list-style:none; }
+.pika_play{position:absolute;top:10px;right:20px;z-index:1;}
+.pika_play a{position:relative;margin-left:auto;cursor:pointer;}
+.pika_play img{border:none;}
+.pika_subdiv { background:#222; position:relative; overflow:hidden;}
+.pika_selected { border:1px solid #900; }
+.pika_caption{width:555px; position:absolute; bottom:0; left:0; padding:10px 10px 5px 10px; text-align:left; background:url(../index_files/transpBlack.png) repeat; z-index:2; color:#fff; }
+.pika_caption a { color:#fff; border-bottom:1px solid #900; width:550px; display:block;}
+.pika_navigation a{color:#009; text-decoration:none;}
+.pika_navigation a:hover{text-decoration:underline; cursor:pointer; }
+.pika_navigation {clear:both;text-align:center; position:absolute; left:-2000em;}
+
+/* begin footer */
+#page_footer a, #page_footer a:visited { color:#d7deea; } 
+
+#page_footer img {float:center; padding-right:15px; padding-bottom:0px;}
+
+#collegeinfo, #contactinfo { float:left; }
+
+#accessibility { clear:both; display:block; width:870px; text-align:left; padding:5px 15px; margin:.5em auto 0 auto; border-top:1px solid #444; border-bottom:1px solid #444; background:#111;}
+#collegeinfo { padding:0 0 0 10px;  margin:0 5px 0px 5px; width:180px; }
+#contactinfo { padding:0 0 0 10px;  margin:0 5px 0px 0px; width:200px; }
+#contactinfo .office { float:left; font-weight:900; }
+#contactinfo .phone { float:right; }
+#page_footer hr { height:1px; border:none; border-bottom:1px solid #900; }
+#page_footer h6 { position:absolute; left:-2000em; } 
+/* end footer */
+
+/* hide */
+.hide { }
+.show { }
+/* hide */
+
+/* Floating boxes layout from Matthew James Taylor: http://matthewjamestaylor.com/blog/floating-boxes-css-layout.htm */
+#wrapper {
+	clear:left;
+	clear:right;
+	clear:bottom;
+	float:left;
+	width:100%;
+	background:#f4f4f4;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.box1wrap {
+	float:left;
+	overflow: hidden;
+	width:220px;
+	margin-top:20px;
+}
+.box1 {
+	float:right;
+	width:210px;
+	height:220px;
+	background:#fff;
+}
+.box1pad {
+	position:relative;
+	right:5px;
+	float:right;
+	width:200px;
+	height:220px;
+	overflow:hidden;
+}
+
+.photobox1wrap {
+	float:left;
+	width:320px;
+	margin-top:20px;
+}
+.photobox1 {
+	float:right;
+	width:310px;
+	height:169px;
+	background:#fff;
+}
+.photobox1pad {
+	position:relative;
+	right:5px;
+	float:right;
+	width:300px;
+	height:168px;
+	overflow:hidden;
+}
+
+div.hover_content_photobox p {
+	padding-top:0px;
+	margin-top:0px;
+	color:#fff
+}
+
+div.hover_content_photobox a, div.hover_content_photobox h3 {
+	color:#f4f4f4
+}
+
+div.hover_content_photobox {
+	width:50%; height:auto;
+	background:url(../index_files/transpBlack.png) repeat;
+	position:absolute
+}
+
+/* This is courtesy of http://jqueryhelp.com/viewtopic.php?p=7428 */
+div.hover_content_box {
+    width:100%; height:100%;
+    background:#222;
+    position:absolute;
+    display:none;
+    top: 0px;
+    right: 0px;
+    cursor:pointer;
+} 
+div.hover_content_box h1,h2,h3,h4,h5 {
+    color:#b00;
+}
+
+div.hover_content_box p,a {
+    color:#fff;
+    margin-top:0px;
+}
+
+
+div.hidden_box {
+	background:#f4f4f4;
+	width:100%; 
+	height:auto; 
+	display:none; 
+	float:left;
+	position:relative;
+}
+
+
+div.return_box {
+	position:absolute;
+	right:0;
+	top:0;
+	color:#900;
+	cursor:pointer;
+	padding:0 6px 6px 6px;
+}
+
+div.research_figure_right {
+    clear:right;
+}
+/* Some nice captions and figure CSS at http://www.w3.org/Style/Examples/007/figures */
+div.sponsor_figure {
+    float: left;
+    width:180px;
+    border-right:#ddb4b4 solid 3px;
+    border-bottom: #ddb4b4 solid 3px;
+    border-top:#ccc solid 1px;
+    border-left: #ccc solid 1px;
+    margin: 0.5em;
+    padding: 0.5em;
+    height:195px;
+    overflow:hidden;
+}
+
+div.research_figure_right, div.research_figure {
+    float: right;
+    width:25%;
+    border-right:#ddb4b4 solid 3px;
+    border-bottom: #ddb4b4 solid 3px;
+    border-top:#ccc solid 1px;
+    border-left: #ccc solid 1px;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+div.research_figure_right, div.research_figure p, div.sponsor_figure p {
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+    text-indent: 0;
+}
+
+div.sponsor_figure p {
+    clear:both;
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+    text-indent: 0;
+    float:none;
+    margin:0px;
+    padding:0px;
+}
+#content .sponsor_figure img.sponsor_scale_me {
+    float:none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+img.scale_me {
+    width: 100%;
+}
+
+/* Some filmstrip magic from http://ashita.org/?p=99 */
+div.filmstrip {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 140px; /* give it enough space for the images and the scrollbar, if present */
+}
+
+ul.imageRow {
+    list-style-image: none; list-style-type: none; height: 100px; 
+    width: 1200px; /* This width is NOT smart: may have to be over-ridden in tag! */
+}
+
+ul.imageRow li {
+    float: left;
+    display: block;
+    padding: 0px; 
+    margin: 0px 0px 0px 0px;
+}
+
+ul.imageRow li img {
+    border: 0px;
+    margin: 0px;
+    padding:5px;
+}
+ul.imageRow li:hover {
+    background-color:#900;
+}
+#research_title {
+	font-size: 18px;
+	color:#990000;
+	margin: 5px 0 5px 10px;
+	text-decoration:none;
+	
+}
+
+

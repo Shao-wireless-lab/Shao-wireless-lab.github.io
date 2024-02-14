@@ -1,0 +1,254 @@
+#nav_main {border-bottom:5px solid #990000}
+
+/* sub-navigation color profile */
+#nav_sub li.highlight, #nav_sub li.highlight:hover{
+	background:#336699
+}
+
+/* breadcrumbs at the top of the page */
+#breadcrumb li a:hover {
+	color: #336699;
+	text-decoration: underline
+}
+
+/* text styles */
+h1, h2, h3, h4, h5, h6 {
+	color: #336699
+}
+
+/* Ohio State Engineering tagline */
+#tagline{
+	margin: 25px 0 0 -16px;
+	padding-left: 20px;
+	background: #336699;
+	clear: left
+}
+#tagline p{font-size:1.5em; background:#fff; padding-left:10px; color:#336699; line-height:1em}
+#tagline p .smalltext{font-size:.75em}
+
+/*----------------------------------------------------------------------------*/
+/* Code above this point affects almost every page on the site.               */
+/* Code below this point is specific to certain pages.                        */
+/*----------------------------------------------------------------------------*/
+
+/* ips/home/other.html */
+div.ips_logo
+{
+	background-color:#ddd;
+	text-align:center;
+	padding:8px;
+	padding-bottom:0;
+}
+div.ips_logo img
+{
+	margin:auto;
+}
+div.ips_logo p
+{
+	margin-top:0
+}
+
+/* ips/seminars/index.html and friends */
+table.seminar_schedule td
+{
+	text-align: center;
+	border: 1px solid #555;
+	padding: 4px
+}
+table.seminar_schedule th
+{
+	text-align: center;
+	border: 1px solid #555;
+	padding: 4px
+}
+table.seminar_schedule
+{
+	margin: 20px
+}
+table.seminar_schedule .seminar_change
+{
+	color: red
+}
+
+/* ips/home/news.html and friends */
+div#news_page{margin-bottom:50px}
+div#news_page div{position:relative; clear:both; padding-top:25px}
+div#news_page h1+div{position:relative; clear:none; padding-top:25px}
+div#news_page p{margin:0;margin-top:8px;}
+div#news_page p.news_date{font-style:italic; margin-top:10px; margin-bottom:10px}
+ul#ipso_facto
+{	/* CSS3 multiple-column layout, not well supported yet */
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+}
+
+/* ips/people/faculty.html and friends */
+
+div.team_pad {
+	width:100%;
+	height:auto;
+	margin-bottom:25px;
+	clear:right;
+	background:#f4f4f4;
+	padding:0;
+	padding-bottom:0;
+	border-bottom: solid 1px #900;
+}
+
+div.team_pad p {
+	margin-top:10px; 
+	margin-bottom:10;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+	
+}
+
+div.team_pad img {
+  class:left;
+  margin-bottom:20px;
+  width: 20%;
+	height: auto;
+clear:right;
+}
+
+div.research_pad {
+	width:100%;
+	height:auto;
+	margin-bottom:25px;
+	clear:right;
+	background:#f4f4f4;
+	padding:0;
+	padding-bottom:0;
+	border-bottom: solid 1px #900;
+}
+
+div.research_pad p {
+	margin-top:10px; 
+	margin-bottom:10;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+	
+}
+
+div.research_pad img {
+  class:left;
+  margin-bottom:20px;
+  width: 100%;
+	height: auto;
+clear:right;
+}
+
+div.bio_pad {
+	width: 385px;
+	height:auto;
+	margin-bottom:25px;
+	clear:left top;
+	background:#f4f4f4;
+	padding:1px 0 0 0;
+
+	border-bottom: solid 1px #900;
+	class:left;
+}
+
+div.bio_pad p {
+	margin-top:10px; 
+	margin-bottom:10;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+
+	
+}
+
+div.bio_pad img {
+	top:-5px;
+	clear:right;
+	margin-bottom:5px;
+	border-left: solid 3px #aaa;
+	border-right: solid 3px #aaa;
+	border-top: solid 3px #aaa;
+	border-bottom: solid 3px #aaa;
+	
+  width: 270px;
+	height:350px ;
+clear:right;
+}
+
+div.teaching_pad {
+	width: 100%;
+	height:auto;
+	margin-bottom:25px;
+	clear:left top;
+	background:#f4f4f4;
+	padding:1px 0 0 0;
+border-top: solid 1px #900;
+	border-bottom: solid 1px #900;
+	class:left;
+}
+
+div.teaching_pad p {
+	margin-top:10px; 
+	margin-bottom:10;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+
+	
+}
+
+div.teaching_pad table {
+	margin-top:10px; 
+	margin-bottom:10;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+
+	
+}
+
+
+
+
+
+div.facultyphotopad {
+	width:98%;
+	height:auto;
+	margin-bottom:25px;
+	clear:right;
+	background:#f4f4f4;
+	padding:0;
+	padding-bottom:0;
+	border-bottom: solid 1px #900;
+}
+div.facultyphotopad p {
+	margin-top:0; 
+	margin-bottom:0;
+	padding-top:0; 
+	padding-bottom:0;
+	text-decoration:none;
+	margin-left:0;
+}
+div.facultyphotopad a {
+	color: #06C
+}
+div.facultyphotopad img {
+	top:-5px;
+	clear:right;
+	margin-bottom:5px;
+	border-left: solid 3px #aaa;
+	border-right: solid 3px #aaa;
+	border-top: solid 3px #aaa;
+	border-bottom: solid 3px #aaa;
+}
+
